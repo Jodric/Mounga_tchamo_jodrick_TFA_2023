@@ -1,2 +1,99 @@
 @import 'utils/variables';
 @import 'components/type';
+
+
+* {
+    margin: 0;
+    padding: 0;
+  }
+
+  html{ 
+    overflow-x:hidden !important; 
+    --scroll-behavior: smooth;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    line-height: 1.4;
+    font-size: 18px;
+}
+
+.title {
+    font-weight: 1000;
+}
+
+.title--big {
+    font-size: 48px;
+
+}
+
+.title--medium {
+    font-size: 28px;
+}
+
+.title--small {
+    font-size: 22px;
+}
+
+ul {
+    list-style: none;
+}
+
+/* ----------------------- Header----------------------- */
+
+.logo__el {
+    width: 97px;
+}
+
+.logo__text {
+    white-space: nowrap;
+    text-indent: 100%;
+    position: absolute;
+    overflow: hidden;
+}
+
+.btn__documentation{
+    background-color: #7CEBD0;
+    cursor: pointer;
+    font-weight: bolder;
+    padding: 9px;
+    border-style: none;
+    border-radius: 10px;
+    font-family: 'Indie Flower', sans-serif;
+}
+
+.head{
+     display: flex;
+     justify-content: space-around;
+     margin: 0 auto;
+     padding: 35px;
+}
+
+
+
+
+/* ----------------------- burger menu ----------------------- */
+
+
+.nav__button{
+    background: none;
+    cursor: pointer;
+    color: black;
+    font-weight: bolder;
+    padding: 9px;
+    border-style: solid;
+    border-radius: 10px;
+    font-family: 'Indie Flower', sans-serif;
+}
+
+.show__menu{
+    background-color: red;
+}
+
+
+.close{
+background-color: #02100e;
+color: white;
+}
