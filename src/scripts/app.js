@@ -62,3 +62,53 @@ window.addEventListener("scroll", (scrollEvent) => {
 
 let annee = new Date().getFullYear();
 document.querySelector(".annee").innerHTML = annee;
+
+
+// scroll annime
+
+const divs = document.querySelectorAll('p');
+
+function animateDivs() {
+    for (let i = 0; i < divs.length; i++) {
+        const divPosition = divs[i].getBoundingClientRect().top;
+        const screenHeight = window.innerHeight / 1.3;
+        if (divPosition < screenHeight) {
+            divs[i].classList.add('show');
+        }
+    }
+}
+
+const title = document.querySelectorAll('h2');
+
+function animateTitle() {
+    for (let i = 0; i < title.length; i++) {
+        const titlePosition = title[i].getBoundingClientRect().top;
+        const screenHeight = window.innerHeight / 1.3;
+        if (titlePosition < screenHeight) {
+            title[i].classList.add('show-title');
+        }
+    }
+}
+
+window.addEventListener('scroll', animateDivs);
+window.addEventListener('scroll', animateTitle);
+
+/*
+const elements = document.querySelectorAll('div, section');
+
+function animateElements() {
+    elements.forEach(element => {
+        const elementPosition = element.getBoundingClientRect().top;
+        const screenHeight = window.innerHeight / 1.3;
+        if (elementPosition < screenHeight) {
+            if (element.tagName === 'DIV') {
+                element.classList.add('show');
+            } else if (element.tagName === 'SECTION') {
+                element.classList.add('show-two');
+            }
+        }
+    });
+}
+
+window.addEventListener('scroll', animateElements);
+*/

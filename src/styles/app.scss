@@ -270,6 +270,31 @@ grid-gap: 5px;
 grid-column: 2/-1;
 }
 
+/* ----------------------- Animation ----------------------- */
+
+h2{
+    opacity: 0;
+    transform: translateX(-100px);
+    transition: all 0.5s ease-in-out;
+}
+
+h2.show-title {
+    opacity: 1;
+    transform: translate(0);
+   }
+
+   
+p{
+    opacity: 0;
+    transform: scale(0.5);
+    transition: all 0.5s ease-in-out;
+}
+
+p.show {
+    opacity: 1;
+    transform: scale(1);
+   }
+
 /* ----------------------- FOOTER ----------------------- */
 
 
