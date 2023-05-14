@@ -84,6 +84,67 @@ list-style: auto;
 margin-top: 16px;
 }
 
+/* ----------------------- SECTION----------------------- */
+
+.sectionOne{
+    margin-top: 150px;
+    padding: 0 25px 0 25px;
+    
+    
+      
+}
+
+.parallax-section {
+    /* Hauteur de chaque section */
+    overflow: hidden; /* Masquer le contenu débordant */
+    z-index: -1;
+    
+  }
+
+  .parallax-content {
+    height: 100%; /* Hauteur pour occuper toute la section */
+    position: sticky; /* Rendre la première section fixe */
+    top: 0; /* Fixer la première section en haut */
+  }
+  
+  
+
+.sectionTwo{
+    background-color: #1b2143;
+    color: wheat;
+    padding: 25px;
+    border-radius: 50px 50px 0 0;
+   
+}
+
+.sectionThree{
+        padding: 0 25px 0 25px;
+        background-color: white;
+        border-radius: 50px 50px 0 0;
+}
+
+.sectionFour{
+        padding: 0 25px 0 25px;
+        background-color: white;
+}
+
+.sectionFive{
+        padding: 0 25px 0 25px;
+        background-color: white;
+}
+
+
+.sectionSix{
+        padding: 0 25px 0 25px;
+        background-color: white;
+}
+
+.sectionSeven{
+        padding: 0 25px 50px 25px;
+        background-color: white;
+}
+
+
 
 
 /* ----------------------- Header----------------------- */
@@ -242,15 +303,6 @@ border-radius: 7px;
 padding: 20px;
 }
 
-/* ----------------------- Main ----------------------- */
-
-.main{
-    padding: 0 35px 35px 35px;
-}
-
-.sectionOne{
-margin-top: 150px;
-}
 
 
 /* ----------------------- GRID ----------------------- */
@@ -294,6 +346,23 @@ p.show {
     opacity: 1;
     transform: scale(1);
    }
+
+
+h3{
+    opacity: 0;
+    transform: translateZ(0);
+    transition: all 0.5s ease-in-out;
+}
+
+h3.show-titleSmall {
+    opacity: 1;
+    transform: translateZ(0);
+    transition: opacity .45s linear 0ms,transform 1.05s cubic-bezier(.19,1,.22,1) 0ms;
+  
+   }
+
+
+
 
 /* ----------------------- FOOTER ----------------------- */
 

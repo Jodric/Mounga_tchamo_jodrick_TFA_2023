@@ -90,8 +90,22 @@ function animateTitle() {
     }
 }
 
+
+const titleSmall = document.querySelectorAll('h3');
+
+function animateTitleSmall() {
+    for (let i = 0; i < titleSmall.length; i++) {
+        const titlePosition2 = titleSmall[i].getBoundingClientRect().top;
+        const screenHeight = window.innerHeight / 1.3;
+        if (titlePosition2 < screenHeight) {
+          titleSmall[i].classList.add('show-titleSmall');
+        }
+    }
+}
+
 window.addEventListener('scroll', animateDivs);
 window.addEventListener('scroll', animateTitle);
+window.addEventListener('scroll', animateTitleSmall);
 
 /*
 const elements = document.querySelectorAll('div, section');
@@ -112,3 +126,24 @@ function animateElements() {
 
 window.addEventListener('scroll', animateElements);
 */
+
+
+// transition parallax
+
+
+window.addEventListener('scroll', function() {
+  var windowHeight = window.innerHeight;
+  var scrollTop = window.pageYOffset;
+  var sections = document.getElementsByClassName('parallax-section');
+
+  for (var i = 0; i < sections.length; i++) {
+    var sectionTop = sections[i].offsetTop;
+    var sectionHeight = sections[i].clientHeight;
+    var sectionBottom = sectionTop + sectionHeight;
+
+    if (scrollTop >= sectionTop && scrollTop <= sectionBottom - windowHeight) {
+      sections[i].style.transform = 'translateY(' + (scrollTop - sectionTop) * 0.5 + 'px)';
+    }
+  }
+});
+
