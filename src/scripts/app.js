@@ -66,39 +66,39 @@ document.querySelector(".annee").innerHTML = annee;
 
 // scroll annime
 
-const divs = document.querySelectorAll('p');
+const divs = document.querySelectorAll('.text');
 
 function animateDivs() {
     for (let i = 0; i < divs.length; i++) {
         const divPosition = divs[i].getBoundingClientRect().top;
         const screenHeight = window.innerHeight / 1.3;
         if (divPosition < screenHeight) {
-            divs[i].classList.add('show');
+            divs[i].classList.add('show-text');
         }
     }
 }
 
-const title = document.querySelectorAll('h2');
+const title = document.querySelectorAll('.title--medium');
 
 function animateTitle() {
     for (let i = 0; i < title.length; i++) {
         const titlePosition = title[i].getBoundingClientRect().top;
         const screenHeight = window.innerHeight / 1.3;
         if (titlePosition < screenHeight) {
-            title[i].classList.add('show-title');
+            title[i].classList.add('show-title--medium');
         }
     }
 }
 
 
-const titleSmall = document.querySelectorAll('h3');
+const titleSmall = document.querySelectorAll('.title--small');
 
 function animateTitleSmall() {
     for (let i = 0; i < titleSmall.length; i++) {
         const titlePosition2 = titleSmall[i].getBoundingClientRect().top;
         const screenHeight = window.innerHeight / 1.3;
         if (titlePosition2 < screenHeight) {
-          titleSmall[i].classList.add('show-titleSmall');
+          titleSmall[i].classList.add('show-title--Small');
         }
     }
 }
@@ -127,6 +127,7 @@ function animateElements() {
 window.addEventListener('scroll', animateElements);
 */
 
+/*
 
 // transition parallax
 
@@ -146,4 +147,6 @@ window.addEventListener('scroll', function() {
     }
   }
 });
+
+*/
 

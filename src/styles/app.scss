@@ -90,24 +90,8 @@ margin-top: 16px;
     margin-top: 150px;
     padding: 0 25px 0 25px;
     
-    
-      
 }
 
-.parallax-section {
-    /* Hauteur de chaque section */
-    overflow: hidden; /* Masquer le contenu débordant */
-    z-index: -1;
-    
-  }
-
-  .parallax-content {
-    height: 100%; /* Hauteur pour occuper toute la section */
-    position: sticky; /* Rendre la première section fixe */
-    top: 0; /* Fixer la première section en haut */
-  }
-  
-  
 
 .sectionTwo{
     background-color: #1b2143;
@@ -324,40 +308,41 @@ grid-column: 2/-1;
 
 /* ----------------------- Animation ----------------------- */
 
-h2{
+.title--medium{
     opacity: 0;
     transform: translateX(-100px);
     transition: all 0.5s ease-in-out;
 }
 
-h2.show-title {
+.show-title--medium {
     opacity: 1;
     transform: translate(0);
    }
 
    
-p{
+.text{
     opacity: 0;
     transform: scale(0.5);
     transition: all 0.5s ease-in-out;
 }
 
-p.show {
+.show-text {
     opacity: 1;
-    transform: scale(1);
+    transform: translateZ(0);
+    transition: opacity .45s linear 0ms,transform 1.05s cubic-bezier(.19,1,.22,1) 0ms;
+ 
    }
 
 
-h3{
+.title--small{
     opacity: 0;
     transform: translateZ(0);
     transition: all 0.5s ease-in-out;
 }
 
-h3.show-titleSmall {
+.show-title--Small {
     opacity: 1;
-    transform: translateZ(0);
-    transition: opacity .45s linear 0ms,transform 1.05s cubic-bezier(.19,1,.22,1) 0ms;
+    transform: translateY(0);
   
    }
 
