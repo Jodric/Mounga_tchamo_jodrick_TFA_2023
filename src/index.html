@@ -44,7 +44,7 @@
 
     <header class="head">
             <a class="logo" href="index.html"> <span class="logo__text">Accueil</span> <img class="logo__el"
-                    src="assets/img/logo.svg" alt="logo"></a>
+                    src="assets/images/logo.svg" alt="logo"></a>
 
             <nav class="menu">
                 <ul class="menu__list">
@@ -57,6 +57,14 @@
                     <li class="menu__el"> <a href="#anchor7"> Présentation </a></li>
                 </ul>
             </nav>
+            <div class="image-block">
+                
+                    <img class="figure__img figure__img--panier" src="assets/images/panier.svg" alt="exemple de panier alimentaire ">
+            
+                
+            </div>
+            
+
             <button class="btn__documentation">Documentation</button>
             <button class="nav__button close"> Menu </button>
 
@@ -67,7 +75,7 @@
 
     <main id="anchor" class="main">
 
-        <section id="anchor1" class="main__section sectionOne ">
+        <section id="anchor1" class="main__section sectionOne grid">
            
             <h1 class="title title--big gridColumn__1 text "> Au P'tit Panier </h1>
             <h3 class="title title--small gridColumn__1"> Une épiceries solidaire au services des étudiants </h3>
@@ -75,14 +83,14 @@
             <figure class="gridColumn__1 figure__gridOne figure--margin">
                 <img class="figure__img figure__img--panier" src="assets/images/panier.svg" alt="exemple de panier alimentaire ">
             </figure>
-
-            <p class="gridColumn__2 gridOne p--marg text ">Dans le cadre de la lutte contre
+           <div class="gridColumn__2 gridOne ">
+            <p class=" p--marg text ">Dans le cadre de la lutte contre
                 la précarité estudiantine, La Solidarithèque est une épicerie solidaire dont l’objectif est de
                 soutenir les étudiants du supérieur confrontés à des difficultés financières.</p>
 
-            <p class="gridColumn__2 gridTwo p--marg text"> En effet, elle distribue des vivres alimentaires chaque
+            <p class="p--marg text"> En effet, elle distribue des vivres alimentaires chaque
                 mercredi de 16h00 à 18h30. aux étudiants de la ville de Namur.</p>
-
+            </div>
             <figure class="gridColumn__1 figure__gridTwo figure figure--margin">
                 <img class="figure__img--big" src="assets/images/wire.png" srcset="assets/images/wire.png 2x" alt="exemple de panier alimentaire " loading="lazy" decoding="async">
                 <figcaption class="figure__caption">panier alimentaire</figcaption>
@@ -235,13 +243,11 @@
                 </p>
 
                 <figure class="figure gridColumn__1 figure__gridFive figure--margin">
-                    <img class="figure__img--big" src="assets/images/wire.png" srcset="assets/images/wire.png 2x" alt="exemple de panier alimentaire " loading="lazy" decoding="async">
-                    <figcaption class="figure__caption">Mes camarade et moi en préparation de l'interview</figcaption>
+                    <img class="figure__img--big" src="assets/images/recap_entretien_responsable.svg" alt="Récapitulatif entretient avec les responsables" loading="lazy" decoding="async">
                 </figure>
 
                 <figure class="figure gridColumn__1 figure__gridSix figure--margin ">
-                    <img class="figure__img--big" src="assets/images/wire.png" srcset="assets/images/wire.png 2x" alt="exemple de panier alimentaire " loading="lazy" decoding="async">
-                    <figcaption class="figure__caption">Mes camarade et moi en préparation de l'interview</figcaption>
+                    <img class="figure__img--big" src="assets/images/recap_entretien_etudiant.svg" alt="Récapitulatif entretient avec les étudiants " loading="lazy" decoding="async">
                 </figure>
 
             </div>
@@ -394,46 +400,41 @@
                 Les étudiants sur cette liste peuvent également indiquer leurs disponibilités.
             </p>
 
-            <video class="gridSixteen gridColumn__1 video video--margin" disableremoteplayback="" playsinline="" muted="" autoplay="false"
-                aria-label="Différents types de résultats de recherche" load="true">
-                <source type="video/webm" lazy-video="assets/video/Comp 1.webm"
-                    lazy-video-disable-inview-play="assets/video/Comp 1.webm" src="assets/video/Comp 1.webm">
+            <video class="gridSixteen gridColumn__1 video video--margin" disableremoteplayback="" playsinline="" muted="" autoplay="false" aria-label="Différents types de résultats de recherche" load="true" width="1600px" height="1628px">
+                <source src="assets/video/ajouter.mp4" type="video/mp4">
+                <source src="assets/video/ajouter.webm" type="video/webm">
             </video>
+            
 
-            <p class="p--marg gridSeventeen gridColumn__2 text"><small class="txtGras">Liste d'attente:</small>L'application garde une
-                liste d'attente des étudiants qui souhaitent récupérer les vivres mais qui n'ont pas pu obtenir de
-                rendez-vous.
-                Les étudiants sur cette liste peuvent également indiquer leurs disponibilités.
-            </p>
+            <p class="p--marg gridSeventeen gridColumn__2 text"><small class="txtGras">Notification d'indisponibilité:</small> Si un étudiant n'est plus disponible pour récupérer les vivres à la date et à l'heure prévues,
+                 il peut notifier l'application de son indisponibilité.
+                 Ou alors il n’a pas respecté son créneaux horaire  dont il est certain qu’il passera récupérer son panier. </p>
 
-            <video class="gridEighteen gridColumn__1 video video--margin" disableremoteplayback="" playsinline="" muted="" autoplay="false"
-             aria-label="Différents types de résultats de recherche" load="true">
-                <source type="video/webm" lazy-video="assets/video/Comp 1.webm"
-                    lazy-video-disable-inview-play="assets/video/Comp 1.webm" src="assets/video/Comp 1.webm">
-            </video>
+                 <video class="gridSixteen gridColumn__1 video video--margin" disableremoteplayback="" playsinline="" muted="" autoplay="false" aria-label="Différents types de résultats de recherche" load="true">
+                    <source src="assets/video/notif_indispo.mp4" type="video/mp4">
+                    <source src="assets/video/notif_indispo.webm" type="video/webm">
+                </video>
 
-            <p class="p--marg gridNineteen gridColumn__2 text"><small class="txtGras">Liste d'attente:</small>L'application garde une liste
-                d'attente des étudiants qui souhaitent récupérer les vivres mais qui n'ont pas pu obtenir de
-                rendez-vous.
-                Les étudiants sur cette liste peuvent également indiquer leurs disponibilités.
-            </p>
+            
 
-            <video class="gridTwenty gridColumn__1 video video--margin" disableremoteplayback="" playsinline="" muted="" autoplay="false"
-                aria-label="Différents types de résultats de recherche" load="true">
-                <source type="video/webm" lazy-video="assets/video/Comp 1.webm"
-                    lazy-video-disable-inview-play="assets/video/Comp 1.webm" src="assets/video/Comp 1.webm">
-            </video>
+            <p class="p--marg gridNineteen gridColumn__2 text"><small class="txtGras">Programmation des étudiants disponibles:</small>Si un étudiant notifie son indisponibilité, l'application interroge la liste d'attente
+                 des étudiants disponibles pour trouver un remplaçant; en temps réel  (pendant les distributions)</p>
 
-            <p class="p--marg gridwenty-1 gridColumn__2 text"><small class="txtGras">Liste d'attente:</small>L'application garde une liste
-                d'attente des étudiants qui souhaitent récupérer les vivres mais qui n'ont pas pu obtenir de
-                rendez-vous.
-                Les étudiants sur cette liste peuvent également indiquer leurs disponibilités.
-            </p>
+                 
+                 <video class="gridSixteen gridColumn__1 video video--margin" disableremoteplayback="" playsinline="" muted="" autoplay="false" aria-label="Différents types de résultats de recherche" load="true">
+                    <source src="assets/video/choisi.mp4" type="video/mp4">
+                    <source src="assets/video/choisi.webm" type="video/webm">
+                </video>
 
-            <video class="gridTwenty-2 gridColumn__1 video video--margin" disableremoteplayback="" playsinline="" muted="" autoplay="false"
-             aria-label="Différents types de résultats de recherche" load="true">
-                <source type="video/webm" lazy-video="assets/video/Comp 1.webm"
-                    lazy-video-disable-inview-play="assets/video/Comp 1.webm" src="assets/video/Comp 1.webm">
+           
+
+            <p class="p--marg gridwenty-1 gridColumn__2 text"><small class="txtGras">Confirmation de remplacement:</small>Lorsqu'un étudiant est programmé pour remplacer un autre étudiant, l'application envoie une 
+                confirmation de rendez-vous au nouvel étudiant. </p>
+
+        
+            <video class="gridSixteen gridColumn__1 video video--margin" disableremoteplayback="" playsinline="" muted="" autoplay="false" aria-label="Différents types de résultats de recherche" load="true">
+                <source src="assets/video/notif_confi.mp4" type="video/mp4">
+                <source src="assets/video/notif_conf.webm" type="video/webm">
             </video>
 
         </section>
@@ -456,7 +457,7 @@
             <ul class="gridTwenty-4 gridColumn__1 audit">
 
                 <li class="container__audit auditOne">
-                    <img class="figure__img--small" src="assets/images/wire.png" srcset="assets/images/wire.png 2x" alt="exemple de panier alimentaire " loading="lazy" decoding="async">
+                    <img class="figure__img--small" src="assets/images/tableReady.png" srcset="assets/images/tableReady@2x.png 2x" alt="Logiciel tableReady " loading="lazy" decoding="async">
                     <p class="p--marg "><small class="txtGras">TablesReady:</small> TablesReady est une application de
                         liste d'attente et de réservations destinée aux restaurants traditionnels sans rendez-vous,
                         services de restauration rapide et bien d'autres.
@@ -464,7 +465,7 @@
                 </li>
 
                 <li class="container__audit auditOne">
-                    <img class="figure__img--small" src="assets/images/wire.png" srcset="assets/images/wire.png 2x" alt="exemple de panier alimentaire " loading="lazy" decoding="async">
+                    <img class="figure__img--small" src="assets/images/waitwhile.png" srcset="assets/images/waitwhile@2x.png 2x" alt="Logiciel waitwhile" loading="lazy" decoding="async">
                     <p class="p--marg "> <small class="txtGras">Waitwhile:</small> Waitwhile est une plateforme
                         intelligente de planification et de liste d'attente, le logiciel permet aux clients de
                         s'enregistrer en ligne
@@ -472,7 +473,7 @@
                 </li>
 
                 <li class="container__audit auditOne">
-                    <img class="figure__img--small" src="assets/images/wire.png" srcset="assets/images/wire.png 2x" alt="exemple de panier alimentaire " loading="lazy" decoding="async">
+                    <img class="figure__img--small" src="assets/images/flexBooker.png" srcset="assets/images/flexBooker@2x.png 2x" alt="Logiciel Flexbooker " loading="lazy" decoding="async">
                     <p class="p--marg "> <small class="txtGras">Flexbooker:</small> c’est un outil très rapide et très
                         puissant de gestion des listes d'attente; il aide à contrôler les foules, tout en permettant les
                         réservations préalables.

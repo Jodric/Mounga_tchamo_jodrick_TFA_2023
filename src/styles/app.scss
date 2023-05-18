@@ -18,10 +18,12 @@ body {
     font-weight: 400;
     line-height: 1.4;
     font-size: 18px;
+    color: #06593B;
 }
 
 .title {
     font-weight: 1000;
+    color: #06593b;
 }
 
 .title--big {
@@ -94,10 +96,18 @@ margin-top: 16px;
 
 
 .sectionTwo{
-    background-color: #1b2143;
-    color: wheat;
+    background-color: #213617;
+    color: white;
     padding: 25px;
     border-radius: 50px 50px 0 0;
+
+    .title{
+        color: white;
+    }
+
+    summary::marker{
+        color: white;
+    }
    
 }
 
@@ -145,7 +155,8 @@ margin-top: 16px;
 }
 
 .btn__documentation{
-    background-color: #7CEBD0;
+    background-color: #06593B;
+    color: white;
     cursor: pointer;
     font-weight: bolder;
     padding: 9px;
@@ -157,15 +168,15 @@ margin-top: 16px;
 .head{
      display: flex;
      justify-content: space-around;
-     margin: 0 auto;
-     padding: 35px;
-     height: 50px;
-     width: 90%;
+     top: 0;
+     width: 100%;
      position: fixed;
      z-index: 1;
      transition: 1s;
      align-items: center;
-     margin-top: -150px;
+     background-color: white;
+     border-bottom: 3px solid white;
+     
 }
 
 .menu__el--actif {
@@ -181,15 +192,15 @@ margin-top: 16px;
 
 
 .nav__button{
-    background: none;
+    background-color: #06593B;
     cursor: pointer;
-    color: black;
+    color: white;
     font-weight: bolder;
     padding: 9px;
     border-style: solid;
     border-radius: 10px;
+    border-color: white;
     font-family: 'Indie Flower', sans-serif;
-    margin-left: 50px;
     padding: 9px;
     position: relative;
     float: right;
@@ -198,8 +209,9 @@ margin-top: 16px;
 }
 
 .nav__button.close {
-    color: #fff;
-    background-color: black;
+    color: #06593B;
+    background-color: white;
+    border-color: #06593b;
 }
 
 .menu {
@@ -216,20 +228,70 @@ margin-top: 16px;
     z-index: 1;
     display: flex;
     opacity: 1;
+    margin-top: 449px;
+    background-color: #06593B;
+    
+
 
 }
 
 .menu__list {
     display: flex;
     flex-direction: column;
-    padding: 50px;
+    padding: 30px;
     align-items: stretch;
-    margin-top: 291px;
+    margin-top: 60px;
+   
+}
+
+.menu a{
+    color: white;
 }
 
 .menu__el {
-    margin-top: 50px;
+    margin-top: 18px;
 }
+
+ li{
+    animation: slide-in 0.3s ease-in-out forwards;
+
+}
+
+
+@keyframes slide-in {
+  0% {
+    transform: translate3d(0,-100%,0);
+    opacity: 0;
+  }
+  100% {
+    transform: translateZ(0);
+    transition: transform .85s cubic-bezier(.215,.61,.355,1) 0ms;
+    opacity: 1;
+  }
+}
+
+.image-block{
+    width: 120px;
+    height: 150px;
+    display: none;
+    bottom: -100%;
+    transform: translateY(158%);
+    transition: all 0.5s ease-in-out;
+}
+
+.open.image-block {
+    display: block;
+    position: fixed;
+    bottom: 15px;
+    z-index: 999;
+    transform: translateY(0);
+  }
+
+
+
+
+
+
 
 details[open] summary {
     border-bottom: 1px solid #ab0d0d;
@@ -242,8 +304,7 @@ details[open] summary {
 }
 
 .details__liste {
-    list-style: auto;
-    margin-left: 42px;
+
 }
 
 .details__liste li{
@@ -253,12 +314,12 @@ margin-top: 0.5em;
 .details__task{
     border: 1px solid #aaa;
     border-radius: 4px;
-    border-color: #ab0d0d;
+    border-color: #06593B;
     padding: 0.5em 0.5em 0.5em;
 }
 
 summary::marker {
-    color: #ab0d0d;
+    color: #06593B;
 }
 
 /* ----------------------- audits ----------------------- */
@@ -271,10 +332,11 @@ summary::marker {
     margin-right: 5px;
 }
 
+
 .audit{
-    border-radius: 7px;
+border-radius: 7px;
 padding: 10px;
-background-color: #aaa;
+background-color: #06593B;
 }
 
 .audit li{
@@ -282,11 +344,10 @@ background-color: #aaa;
 }
 
 .container__audit{
-background-color: #7CEBD0;
+background-color: white;
 border-radius: 7px;
 padding: 20px;
 }
-
 
 
 /* ----------------------- GRID ----------------------- */
@@ -345,6 +406,10 @@ grid-column: 2/-1;
     transform: translateY(0);
   
    }
+
+
+
+ 
 
 
 

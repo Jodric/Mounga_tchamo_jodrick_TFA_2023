@@ -1,14 +1,17 @@
 "use strict";
 
+
 // burger menu
 
 const menuButton = document.querySelector('.nav__button');
 const menu = document.querySelector('.menu');
+const imageBlock = document.querySelector('.image-block');
 
 
 menuButton.addEventListener('click', function () {
   menu.classList.toggle('show__menu');
   menuButton.classList.toggle('close');
+  imageBlock.classList.toggle('open');
 });
 
 const menu__el = document.querySelectorAll('.menu__el');
@@ -103,9 +106,20 @@ function animateTitleSmall() {
     }
 }
 
+
+
 window.addEventListener('scroll', animateDivs);
 window.addEventListener('scroll', animateTitle);
 window.addEventListener('scroll', animateTitleSmall);
+
+
+
+
+
+
+
+
+
 
 /*
 const elements = document.querySelectorAll('div, section');
