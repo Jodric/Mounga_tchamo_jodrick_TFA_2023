@@ -40,7 +40,7 @@ body {
 
 .title--small {
     font-size: 22px;
-    margin-top: 60px;
+    margin-top: 5px;
 }
 
 ul {
@@ -52,9 +52,8 @@ text-decoration: none;
 }
 
 .figure__img--panier{
-    width: 100%;
-    height: 100%;
-    }
+    width: 70%;
+   }
     
 .figure__img--big{
     width: 100%;
@@ -89,32 +88,36 @@ margin-top: 16px;
 /* ----------------------- SECTION----------------------- */
 
 .sectionOne{
-    margin-top: 150px;
-    padding: 0 25px 0 25px;
+    margin-top: 94px;
+    padding: 25px 25px 25px 25px;
+    background-image: url(../assets/images/background-mobile.svg);
+    background-size: cover;
+    border-radius: 20px;
     
 }
 
 
 .sectionTwo{
-    background-color: #213617;
-    color: white;
     padding: 25px;
     border-radius: 50px 50px 0 0;
 
-    .title{
-        color: white;
-    }
-
-    summary::marker{
-        color: white;
-    }
+ 
    
 }
 
 .sectionThree{
-        padding: 0 25px 0 25px;
-        background-color: white;
+        background-color: #213617;
+        color: white;
+        padding: 25px 25px 25px 25px;
         border-radius: 50px 50px 0 0;
+
+        .title{
+            color: white;
+        }
+    
+        summary::marker{
+            color: white;
+        }
 }
 
 .sectionFour{
@@ -228,7 +231,7 @@ margin-top: 16px;
     z-index: 1;
     display: flex;
     opacity: 1;
-    margin-top: 449px;
+    top: 0;
     background-color: #06593B;
     
 
@@ -240,7 +243,8 @@ margin-top: 16px;
     flex-direction: column;
     padding: 30px;
     align-items: stretch;
-    margin-top: 60px;
+    margin-top: 10%;
+    width: 100%;
    
 }
 
@@ -249,7 +253,8 @@ margin-top: 16px;
 }
 
 .menu__el {
-    margin-top: 18px;
+    margin-top: 26px;
+    border-bottom: ridge;
 }
 
  li{
@@ -282,7 +287,7 @@ margin-top: 16px;
 .open.image-block {
     display: block;
     position: fixed;
-    bottom: 15px;
+    bottom: 7%;
     z-index: 999;
     transform: translateY(0);
   }
@@ -419,7 +424,7 @@ grid-column: 2/-1;
 
 footer {
     text-align: center;
-    border-top: 1px solid #ab0d0d;
+    border-top: 1px solid #06593B;
 }
 
 
@@ -456,6 +461,6 @@ footer {
 }
 
 .footer a {
-    color: #801010;
+    color: #823e05;
 }
 
