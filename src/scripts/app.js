@@ -105,12 +105,58 @@ function animateTitleSmall() {
         }
     }
 }
-
-
-
 window.addEventListener('scroll', animateDivs);
 window.addEventListener('scroll', animateTitle);
 window.addEventListener('scroll', animateTitleSmall);
+
+// afficher et masquer la synsthèse des rencontres
+
+const activeButton = document.querySelector('.openbutton');
+const tableauButton = document.querySelector('.openbutton__2');
+const panel = document.querySelector('.voirPlus');
+const tableau = document.querySelector('.voirPlus--tableau');
+
+activeButton.addEventListener('click', () => {
+  panel.classList.toggle('show');
+});
+tableauButton.addEventListener('click', () => {
+  tableau.classList.toggle('show');
+});
+
+
+// darkmode
+let buttondm = document.querySelector("#darkmode");
+let theme = localStorage.getItem("theme");
+let body = document.querySelector("#body");
+
+buttondm.addEventListener("click", darkmode);
+
+if (theme == "night") {
+  night();
+}
+
+function darkmode() {
+  if (body.classList.contains("day")) {
+    night();
+  } else if (body.classList.contains("night")) {
+    day();
+  }
+}
+
+function day() {
+  body.classList.toggle("night");
+  body.classList.toggle("day");
+  buttondm.innerText = "Dark"
+  localStorage.setItem("theme", "day");
+}
+
+function night() {
+  body.classList.toggle("night");
+  body.classList.toggle("day");
+  buttondm.innerText = "Light"
+  localStorage.setItem("theme", "night");
+}
+
 
 
 
