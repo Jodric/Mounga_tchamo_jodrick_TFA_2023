@@ -59,12 +59,16 @@ text-decoration: none;
     width: 100%;
     }
     
- p{
+ .p--marg{
     margin-top: 22px;
     }
 
-    .figure--margin{
-    margin-top: 100px;
+ .figure--margin{
+    margin-top: 22px;
+}
+
+.picture{
+  margin: 22px 0 22px 0;
 }
 
 .titre--position{
@@ -87,11 +91,27 @@ margin-top: 16px;
 .liste__presentation {
 list-style: auto;
 margin-top: 16px;
-margin-left: 50px;
+margin-left: 22px;
 }
 
 .panierAlimentaire{
   width: 70%;
+}
+
+.citation__contenu{
+  font-size: xx-large;
+    font-style: italic;
+    font-weight: 700;
+}
+
+.txtGras{
+
+}
+
+.containerText{
+  background-color: #F8F7F1;
+  padding: 22px;
+  border-radius: 9px;
 }
 
 /* ----------------------- SECTION----------------------- */
@@ -102,6 +122,7 @@ margin-left: 50px;
     background-image: url(../assets/images/background-mobile.svg);
     background-size: cover;
     border-radius: 20px;
+    margin-bottom: 22px;
     
 }
 
@@ -109,6 +130,7 @@ margin-left: 50px;
 .sectionTwo{
     padding: 25px;
     border-radius: 50px 50px 0 0;
+    margin-bottom: 22px;
 
  
    
@@ -117,8 +139,9 @@ margin-left: 50px;
 .sectionThree{
         background-color: #06593B;
         color: white;
-        padding: 25px 25px 25px 25px;
+        padding: 25px;
         border-radius: 50px 50px 0 0;
+        margin-bottom: 22px;
 
         .title{
             color: white;
@@ -131,19 +154,27 @@ margin-left: 50px;
 
 .sectionFour{
         padding: 25px;
+        margin-bottom: 22px;
+
+        .title--medium{
+          margin-top: 0;
+        }
 }
 
 .sectionFive{
         padding: 25px;
+        margin-bottom: 22px;
 }
 
 
 .sectionSix{
         padding: 25px;
+        margin-bottom: 22px;
 }
 
 .sectionSeven{
         padding: 25px;
+        margin-bottom: 22px;
 }
 
 
@@ -188,7 +219,7 @@ margin-left: 50px;
 }
 
 .menu__el--actif {
-    border-bottom: 2px red;
+    opacity: 0.6;
 }
 
 .head--hide{
@@ -655,6 +686,10 @@ summary::marker {
 .night .title--big{
   color: #02ff37;
 }
+.night .containerText{
+  background-color: #05141A;
+}
+
 
 
 
@@ -689,6 +724,9 @@ padding: 20px;
   margin-bottom: 10px;
 }
 
+.audit p {
+  margin-top: 0;
+}
 
 /*-----------------------voir plus -------------------*/
 
@@ -791,13 +829,13 @@ grid-column: 2/-1;
    }
 
    
-.text{
+.textScale{
     opacity: 0;
     transform: scale(0.5);
     transition: all 0.5s ease-in-out;
 }
 
-.show-text {
+.show-textScale {
     opacity: 1;
     transform: translateZ(0);
     transition: opacity .45s linear 0ms,transform 1.05s cubic-bezier(.19,1,.22,1) 0ms;
@@ -882,13 +920,6 @@ display: flex;
 }
 
 
-  .div--marg {
-      margin-top: 22px;
-  }
-
-  .figure--marg {
-      margin-top: 60px;
-  }
 
   .mainCs {
       margin-left: 120px;
@@ -906,6 +937,12 @@ display: flex;
   .containerUk {
       padding: 109px;
   }
+
+  .figure--margin{
+    margin-top: 22px;
+  }
+
+
 
   /* ----------------------- SECTION----------------------- */
 

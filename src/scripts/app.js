@@ -69,14 +69,14 @@ document.querySelector(".annee").innerHTML = annee;
 
 // scroll annime
 
-const divs = document.querySelectorAll('.text');
+const scale = document.querySelectorAll('.textScale');
 
-function animateDivs() {
-    for (let i = 0; i < divs.length; i++) {
-        const divPosition = divs[i].getBoundingClientRect().top;
+function animateScale() {
+    for (let i = 0; i < scale.length; i++) {
+        const divPosition = scale[i].getBoundingClientRect().top;
         const screenHeight = window.innerHeight / 1.3;
         if (divPosition < screenHeight) {
-            divs[i].classList.add('show-text');
+            scale[i].classList.add('show-textScale');
         }
     }
 }
@@ -105,7 +105,7 @@ function animateTitleSmall() {
         }
     }
 }
-window.addEventListener('scroll', animateDivs);
+window.addEventListener('scroll', animateScale);
 window.addEventListener('scroll', animateTitle);
 window.addEventListener('scroll', animateTitleSmall);
 
