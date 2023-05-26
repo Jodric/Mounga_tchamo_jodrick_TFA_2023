@@ -14,15 +14,6 @@ menuButton.addEventListener('click', function () {
   imageBlock.classList.toggle('open');
 });
 
-const menu__el = document.querySelectorAll('.menu__el');
-
-menu__el.forEach(part => {
-  part.addEventListener('click', (e) => {
-    menu.classList.toggle('show__menu');
-    menuButton.classList.toggle('close');
-  });
-});
-
 // Marquer la section active dans la navigation
 const nav = document.querySelector('nav');
 const sections = document.querySelectorAll('section');
@@ -69,8 +60,8 @@ document.querySelector(".annee").innerHTML = annee;
 
 // scroll annime
 
-const scale = document.querySelectorAll('.textScale');
 
+const scale = document.querySelectorAll('.textScale');
 function animateScale() {
     for (let i = 0; i < scale.length; i++) {
         const divPosition = scale[i].getBoundingClientRect().top;
@@ -105,6 +96,13 @@ function animateTitleSmall() {
         }
     }
 }
+
+document.addEventListener('DOMContentLoaded', function() {
+  animateScale();
+  animateTitle();
+  animateTitleSmall();
+});
+
 window.addEventListener('scroll', animateScale);
 window.addEventListener('scroll', animateTitle);
 window.addEventListener('scroll', animateTitleSmall);
