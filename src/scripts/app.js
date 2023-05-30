@@ -52,10 +52,13 @@ window.addEventListener("scroll", (scrollEvent) => {
   prevScrollpos = currentScrollPos;
 });
 
+
+
 // année
 
 let annee = new Date().getFullYear();
 document.querySelector(".annee").innerHTML = annee;
+
 
 
 // scroll annime
@@ -107,6 +110,8 @@ window.addEventListener('scroll', animateScale);
 window.addEventListener('scroll', animateTitle);
 window.addEventListener('scroll', animateTitleSmall);
 
+
+
 // afficher et masquer la synsthèse des rencontres
 
 const activeButton = document.querySelector('.openbutton');
@@ -116,9 +121,11 @@ const tableau = document.querySelector('.voirPlus--tableau');
 
 activeButton.addEventListener('click', () => {
   panel.classList.toggle('show');
+  activeButton.classList.toggle('menu__el--actif')
 });
 tableauButton.addEventListener('click', () => {
   tableau.classList.toggle('show');
+  tableauButton.classList.toggle('menu__el--actif')
 });
 
 
@@ -157,56 +164,31 @@ function night() {
   localStorage.setItem("theme", "night");
 }
 
-
-
-
-
-
-
-
-
-
-
-/*
-const elements = document.querySelectorAll('div, section');
-
-function animateElements() {
-    elements.forEach(element => {
-        const elementPosition = element.getBoundingClientRect().top;
-        const screenHeight = window.innerHeight / 1.3;
-        if (elementPosition < screenHeight) {
-            if (element.tagName === 'DIV') {
-                element.classList.add('show');
-            } else if (element.tagName === 'SECTION') {
-                element.classList.add('show-two');
-            }
-        }
-    });
-}
-
-window.addEventListener('scroll', animateElements);
-*/
-
-/*
-
-// transition parallax
-
+// Effet paralax sur le fonctionnement de l'application
 
 window.addEventListener('scroll', function() {
-  var windowHeight = window.innerHeight;
-  var scrollTop = window.pageYOffset;
-  var sections = document.getElementsByClassName('parallax-section');
+  let windowHeight = window.innerHeight;
+  let scrollTop = window.pageYOffset;
+  let sections = document.getElementsByClassName('parallax-section');
 
   for (var i = 0; i < sections.length; i++) {
-    var sectionTop = sections[i].offsetTop;
-    var sectionHeight = sections[i].clientHeight;
-    var sectionBottom = sectionTop + sectionHeight;
+    let sectionTop = sections[i].offsetTop;
+    let sectionHeight = sections[i].clientHeight;
+    let sectionBottom = sectionTop + sectionHeight;
 
     if (scrollTop >= sectionTop && scrollTop <= sectionBottom - windowHeight) {
-      sections[i].style.transform = 'translateY(' + (scrollTop - sectionTop) * 0.5 + 'px)';
+      sections[i].classList.toggle('parallax-active', true);
+    } else {
+      sections[i].classList.toggle('parallax-active', false);
     }
   }
 });
 
-*/
+
+
+
+
+
+
+
 

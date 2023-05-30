@@ -21,6 +21,35 @@ body {
     color: #06593B;
 }
 
+.parallax-section {
+  
+  overflow: hidden; 
+  transition: transform 0.3s ease-in-out;
+    
+}
+
+.descrip__fonction--parallax {
+ 
+  position: sticky; 
+  top: 0; 
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.analyse__result--parallax{
+  position: sticky; 
+  top: -400px;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.descrip__fonction{
+  background-color: white;
+  margin-top: 26px;
+  border-radius: 50px 50px 0 0;
+  padding: 4px;
+}
+
 .title {
     font-weight: 1000;
     color: #823e05;;
@@ -88,7 +117,7 @@ figcaption {
 }
 
 .video--margin{
-margin-top: 140px;
+margin-top: 60px;
 }
 
 .video{
@@ -103,7 +132,8 @@ height: auto;
 }
 
 .liste__ameliorer {
-margin-top: 16px;
+margin-top: 10px;
+margin-left: 10px;
 }
 
 .liste__presentation {
@@ -125,7 +155,7 @@ margin-left: 22px;
 .txtGras{
 font-size: 25px;
 font-weight: 700;
-margin-bottom: 22px;
+margin-bottom: 7px;
 }
 
 .containerText{
@@ -155,7 +185,7 @@ margin-bottom: 22px;
 .sectionTwo{
     padding: 25px;
     border-radius: 50px 50px 0 0;
-    margin-bottom: 22px;
+    margin-bottom: 90px;
 
  
    
@@ -166,7 +196,7 @@ margin-bottom: 22px;
         color: white;
         padding: 25px;
         border-radius: 50px 50px 0 0;
-        margin-bottom: 22px;
+        margin-bottom: 90px;
 
         .title{
             color: #edeed3;
@@ -188,7 +218,7 @@ margin-bottom: 22px;
 
 .sectionFive{
         padding: 25px;
-        margin-bottom: 22px;
+        margin-bottom: 90px;
 }
 
 
@@ -209,6 +239,7 @@ margin-bottom: 22px;
 
 .logo__el {
     width: 97px;
+    margin-left: 10px;
 }
 
 .logo__text {
@@ -226,7 +257,7 @@ margin-bottom: 22px;
     padding: 9px;
     border-style: none;
     border-radius: 10px;
-    font-family: 'Indie Flower', sans-serif;
+    margin-right: 10px;
 }
 
 .head{
@@ -726,10 +757,9 @@ summary::marker {
 /* ----------------------- audits ----------------------- */
 
 .figure__img--small{
-    width: 30%;
+    width: 25%;
     height: auto;
     float: left;
-    margin-top: 24px;
     margin-right: 10px;
 }
 
@@ -785,10 +815,10 @@ padding: 20px;
   background-color: #06593B;
   color: white;
   font-weight: bolder;
-  padding: 20px;
+  padding: 10px;
   border-style: none;
   border-radius: 25px;
-  font-size: 20px;
+  font-size: 16px;
 }
 
 .openbutton:hover{
@@ -802,7 +832,10 @@ padding: 20px;
 .custom-table {
 	border-spacing: 10px;
 	color: white;
-  width: 50%;
+  width: 100%;
+  overflow-x: auto;
+  border-collapse: collapse;
+  margin-top: 22px;
   }
   
   .custom-table td {
@@ -952,12 +985,8 @@ grid-column: 2/-1;
   grid-row-start: 4;
 }
 
-.containerLiens__uk {
-  font-size: xx-large;
-  text-align: center;
-  grid-column-start: 2;
-  margin-right: 20px;
-  max-width: 350px;
+.lien--hover{
+  text-decoration: underline
 }
 
 
@@ -990,20 +1019,23 @@ grid-column: 2/-1;
   color: black;
 }
 
-.container--maroon {
-  background-color: #ff7474;
+.container--blanc2 {
+  background-color: #edeed3;
 }
 
 .container--noir {
   background-color: black;
 }
 
-.container--rougeFonce {
-  background-color: #801010;
+.container--green {
+  background-color: #06593B;
 }
 
-.container--Rouge {
-  background-color: #ab0d0d;
+.container--Rust {
+  background-color: #823e05;
+}
+.container--vertClair{
+  background-color: #6aff89;
 }
 
 .cadreCouleur__container {
@@ -1103,8 +1135,10 @@ display: flex;
   margin-top: 0px;
   margin-bottom: 0px;
 }
+.impact__audit{
+  display: flex;
 
-
+}
 
   .mainCs {
       margin-left: 120px;
@@ -1144,7 +1178,22 @@ display: flex;
   width: 100%;
   }
 
+  .video--margin{
+    margin-top: 140px;
+    }
 
+    .txtGras{
+      margin-bottom: 22px;
+      }
+
+      .menu__list {
+        margin-top: 5%;
+} 
+
+.openbutton, .openbutton__2{
+  padding: 20px;
+  font-size: 20px;
+}
 
   /* ----------------------- SECTION----------------------- */
 
@@ -1364,6 +1413,17 @@ display: flex;
 
   }
 
+  .analyse__result--parallax{
+
+    top: 0;
+    
+  }
+
+  .descrip__fonction{
+    margin-top: 26px;
+    padding: 60px;
+  }
+
   .title--medium {
 
 
@@ -1402,7 +1462,10 @@ display: none;
 
 .menu__el{
   border: none;
+  margin-top: 0;
 }
+
+
 
  /* ----------------------- GRID ----------------------- */
 
