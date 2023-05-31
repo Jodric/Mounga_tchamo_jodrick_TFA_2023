@@ -66,41 +66,41 @@ document.querySelector(".annee").innerHTML = annee;
 
 const scale = document.querySelectorAll('.textScale');
 function animateScale() {
-    for (let i = 0; i < scale.length; i++) {
-        const divPosition = scale[i].getBoundingClientRect().top;
-        const screenHeight = window.innerHeight / 1.3;
-        if (divPosition < screenHeight) {
-            scale[i].classList.add('show-textScale');
-        }
+  for (let i = 0; i < scale.length; i++) {
+    const divPosition = scale[i].getBoundingClientRect().top;
+    const screenHeight = window.innerHeight / 1.3;
+    if (divPosition < screenHeight) {
+      scale[i].classList.add('show-textScale');
     }
+  }
 }
 
 const title = document.querySelectorAll('.title--medium');
 
 function animateTitle() {
-    for (let i = 0; i < title.length; i++) {
-        const titlePosition = title[i].getBoundingClientRect().top;
-        const screenHeight = window.innerHeight / 1.3;
-        if (titlePosition < screenHeight) {
-            title[i].classList.add('show-title--medium');
-        }
+  for (let i = 0; i < title.length; i++) {
+    const titlePosition = title[i].getBoundingClientRect().top;
+    const screenHeight = window.innerHeight / 1.3;
+    if (titlePosition < screenHeight) {
+      title[i].classList.add('show-title--medium');
     }
+  }
 }
 
 
 const titleSmall = document.querySelectorAll('.title--small');
 
 function animateTitleSmall() {
-    for (let i = 0; i < titleSmall.length; i++) {
-        const titlePosition2 = titleSmall[i].getBoundingClientRect().top;
-        const screenHeight = window.innerHeight / 1.3;
-        if (titlePosition2 < screenHeight) {
-          titleSmall[i].classList.add('show-title--Small');
-        }
+  for (let i = 0; i < titleSmall.length; i++) {
+    const titlePosition2 = titleSmall[i].getBoundingClientRect().top;
+    const screenHeight = window.innerHeight / 1.3;
+    if (titlePosition2 < screenHeight) {
+      titleSmall[i].classList.add('show-title--Small');
     }
+  }
 }
 
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
   animateScale();
   animateTitle();
   animateTitleSmall();
@@ -119,14 +119,19 @@ const tableauButton = document.querySelector('.openbutton__2');
 const panel = document.querySelector('.voirPlus');
 const tableau = document.querySelector('.voirPlus--tableau');
 
-activeButton.addEventListener('click', () => {
-  panel.classList.toggle('show');
-  activeButton.classList.toggle('menu__el--actif')
-});
-tableauButton.addEventListener('click', () => {
-  tableau.classList.toggle('show');
-  tableauButton.classList.toggle('menu__el--actif')
-});
+if (activeButton) {
+  activeButton.addEventListener('click', () => {
+    panel.classList.toggle('show');
+    activeButton.classList.toggle('menu__el--actif')
+  });
+}
+
+if (tableauButton) {
+  tableauButton.addEventListener('click', () => {
+    tableau.classList.toggle('show');
+    tableauButton.classList.toggle('menu__el--actif')
+  });
+}
 
 
 // darkmode
@@ -166,7 +171,7 @@ function night() {
 
 // Effet paralax sur le fonctionnement de l'application
 
-window.addEventListener('scroll', function() {
+window.addEventListener('scroll', function () {
   let windowHeight = window.innerHeight;
   let scrollTop = window.pageYOffset;
   let sections = document.getElementsByClassName('parallax-section');
