@@ -15,13 +15,10 @@ html {
 
 body {
   font-family: 'Montserrat', sans-serif;
-  font-weight: 400;
   line-height: 1.4;
   font-size: 18px;
   color: #06593B;
 }
-
-
 
 .descrip__fonction {
   background-color: white;
@@ -33,7 +30,6 @@ body {
 .title {
   font-weight: 1000;
   color: #823e05;
-  ;
 }
 
 .title--big {
@@ -72,7 +68,6 @@ figcaption {
 }
 
 
-
 .figure__img--panier {
   width: 70%;
 }
@@ -98,7 +93,7 @@ figcaption {
 }
 
 .video--margin {
-  margin-top: 60px;
+  margin-top: 15px;
 }
 
 .video {
@@ -114,7 +109,6 @@ figcaption {
 
 .liste__ameliorer {
   margin-top: 10px;
-  margin-left: 10px;
 }
 
 .liste__presentation {
@@ -167,9 +161,6 @@ figcaption {
   padding: 25px;
   border-radius: 50px 50px 0 0;
   margin-bottom: 90px;
-
-
-
 }
 
 .sectionThree {
@@ -213,14 +204,10 @@ figcaption {
   margin-bottom: 22px;
 }
 
-
-
-
 /* ----------------------- Header----------------------- */
 
 .logo__el {
   width: 97px;
-  margin-left: 10px;
 }
 
 .logo__text {
@@ -307,8 +294,6 @@ figcaption {
   top: 0;
   background-color: #06593B;
 
-
-
 }
 
 .menu__list {
@@ -329,7 +314,6 @@ figcaption {
   margin-top: 26px;
   border-bottom: ridge;
 }
-
 
 
 @keyframes slide-in {
@@ -378,7 +362,6 @@ li {
     animation-delay: 0.7s;
   }
 }
-
 
 
 .image-block {
@@ -768,11 +751,6 @@ summary::marker {
   background-color: #05141A;
 }
 
-
-
-
-
-
 /* ----------------------- audits ----------------------- */
 
 .figure__img--small {
@@ -826,7 +804,6 @@ summary::marker {
 }
 
 
-
 .openbutton,
 .openbutton__2 {
   display: flex;
@@ -844,7 +821,6 @@ summary::marker {
 .openbutton:hover {
   opacity: 0.5;
 }
-
 
 /*-----------------------Tableau----------------------*/
 
@@ -1084,7 +1060,6 @@ summary::marker {
 }
 
 
-
 /* ----------------------- FOOTER ----------------------- */
 
 
@@ -1136,8 +1111,6 @@ footer {
   width: 45px;
   height: 26px;
 }
-
-
 
 
 @media(min-width: 700px) {
@@ -1218,6 +1191,11 @@ footer {
     font-size: 20px;
   }
 
+  .liste__ameliorer {
+    margin-left: 10px;
+  }
+
+
   /* ----------------------- SECTION----------------------- */
 
   .sectionOne {
@@ -1265,7 +1243,6 @@ footer {
   .gridColumn__1 {
     grid-column: 1/-1;
   }
-
 
 
   .gridTitle {
@@ -1398,7 +1375,6 @@ footer {
     grid-column: 5/-1;
   }
 
-  .gridTwenty-6 {}
 
   .gridTwenty-8 {
     grid-column: 3/-1;
@@ -1412,8 +1388,6 @@ footer {
   .main__section {
     margin-bottom: 90px;
   }
-
-
 
   .tabs {
     padding: 30px 15px 30px 15px;
@@ -1483,7 +1457,9 @@ footer {
     margin-top: 0;
   }
 
-
+  .logo__el {
+    margin-left: 10px;
+  }
 
   /* ----------------------- GRID ----------------------- */
 
@@ -1494,13 +1470,7 @@ footer {
 
   }
 
-
-
-
   .foot__el {
     margin-left: 120px;
   }
-
-
-
 }
