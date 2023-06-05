@@ -35,6 +35,7 @@ body {
 .title--big {
   font-size: 37px;
   text-transform: uppercase;
+  
 
 }
 
@@ -226,6 +227,7 @@ figcaption {
   border-style: none;
   border-radius: 10px;
   margin-right: 10px;
+  font-size: 15px;
 }
 
 .head {
@@ -543,27 +545,27 @@ li {
 
 .groupe-animation {
   opacity: 0;
-  animation: moveVivres 4s forwards;
+  animation: moveVivres 3s forwards;
 }
 
 .tea {
-  animation-delay: 3s;
-}
-
-.banane {
   animation-delay: 2.5s;
 }
 
-.legume {
+.banane {
   animation-delay: 2s;
 }
 
+.legume {
+  animation-delay: 1.5s;
+}
+
 .pomme1 {
-  animation-delay: 1s;
+  animation-delay: 0.5s;
 }
 
 .pomme2 {
-  animation-delay: 1.5s;
+  animation-delay: 1s;
 }
 
 .bouteille {
@@ -571,7 +573,7 @@ li {
 }
 
 .pain {
-  animation-delay: 3.5s;
+  animation-delay: 3s;
 }
 
 @keyframes moveSac {
@@ -589,7 +591,7 @@ li {
 
 .sac-animation {
   opacity: 0;
-  animation: moveSac 4s forwards;
+  animation: moveSac 3s forwards;
 }
 
 
@@ -1191,11 +1193,6 @@ footer {
     font-size: 20px;
   }
 
-  .liste__ameliorer {
-    margin-left: 10px;
-  }
-
-
   /* ----------------------- SECTION----------------------- */
 
   .sectionOne {
@@ -1405,6 +1402,7 @@ footer {
 
   .title--big {
     font-size: 98px;
+    line-height: 1.225;
 
   }
 
@@ -1419,7 +1417,6 @@ footer {
     padding: 60px;
   }
 
-  .title--medium {}
 
 
 }
