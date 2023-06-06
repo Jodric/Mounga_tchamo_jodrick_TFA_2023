@@ -318,7 +318,7 @@ figcaption {
 }
 
 
-@keyframes slide-in {
+@keyframes liste-in {
   0% {
     transform: translate3d(0, -100%, 0);
     opacity: 0;
@@ -326,7 +326,7 @@ figcaption {
 
   100% {
     transform: translateZ(0);
-    transition: transform .85s cubic-bezier(.215, .61, .355, 1) 0ms;
+   
     opacity: 1;
   }
 }
@@ -334,34 +334,35 @@ figcaption {
 
 li {
   opacity: 0;
-  animation: slide-in 0.7s ease-in-out forwards;
+  animation: liste-in 0.5s ease-in-out forwards;
+   transition: transform 1s cubic-bezier(.215, .61, .355, 1) 0ms;
 
   &:nth-child(1) {
-    animation-delay: 0.1s;
-  }
-
-  &:nth-child(2) {
-    animation-delay: 0.2s;
-  }
-
-  &:nth-child(3) {
-    animation-delay: 0.3s;
-  }
-
-  &:nth-child(4) {
-    animation-delay: 0.4s;
-  }
-
-  &:nth-child(5) {
     animation-delay: 0.5s;
   }
 
+  &:nth-child(2) {
+    animation-delay: 1s;
+  }
+
+  &:nth-child(3) {
+    animation-delay: 1.5s;
+  }
+
+  &:nth-child(4) {
+    animation-delay: 2s;
+  }
+
+  &:nth-child(5) {
+    animation-delay: 2.5s;
+  }
+
   &:nth-child(6) {
-    animation-delay: 0.6s;
+    animation-delay: 3s;
   }
 
   &:nth-child(7) {
-    animation-delay: 0.7s;
+    animation-delay: 3.5s;
   }
 }
 
