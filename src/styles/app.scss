@@ -84,7 +84,6 @@ figcaption {
 .figure--margin {
   margin-top: 22px;
 }
-
 .picture {
   margin: 22px 0 22px 0;
 }
@@ -110,6 +109,8 @@ figcaption {
 
 .liste__ameliorer {
   margin-top: 10px;
+  max-width: 100ch;
+  margin-left: 0;
 }
 
 .liste__presentation {
@@ -139,17 +140,18 @@ figcaption {
   padding: 22px;
   border-radius: 9px;
   height: fit-content;
+  max-width: 55ch;
 }
 
 .figure__img--medium {
   max-width: 50%;
 }
 
-/* ----------------------- SECTION----------------------- */
+/* ----------------------- SECTIONS----------------------- */
 
 .sectionOne {
   margin-top: 94px;
-  padding: 25px 25px 25px 25px;
+  padding: 25px;
   background-image: url(../assets/images/background-mobile.svg);
   background-size: cover;
   border-radius: 20px;
@@ -227,7 +229,7 @@ figcaption {
   border-style: none;
   border-radius: 10px;
   margin-right: 10px;
-  font-size: 15px;
+  font-size: 12px;
 }
 
 .head {
@@ -250,7 +252,7 @@ figcaption {
 
 .head--hide {
   opacity: .0001;
-  top: -10px;
+  top: -110px;
 }
 
 /* ----------------------- burger menu ----------------------- */
@@ -326,7 +328,7 @@ figcaption {
 
   100% {
     transform: translateZ(0);
-   
+
     opacity: 1;
   }
 }
@@ -334,35 +336,35 @@ figcaption {
 
 li {
   opacity: 0;
-  animation: liste-in 0.5s ease-in-out forwards;
-   transition: transform 1s cubic-bezier(.215, .61, .355, 1) 0ms;
+  animation: liste-in 0.25s ease-in-out forwards;
+  transition: transform 1s cubic-bezier(.215, .61, .355, 1) 0ms;
 
   &:nth-child(1) {
-    animation-delay: 0.5s;
+    animation-delay: 0.25s;
   }
 
   &:nth-child(2) {
-    animation-delay: 1s;
+    animation-delay: 0.5s;
   }
 
   &:nth-child(3) {
-    animation-delay: 1.5s;
+    animation-delay: 0.75s;
   }
 
   &:nth-child(4) {
-    animation-delay: 2s;
+    animation-delay: 1s;
   }
 
   &:nth-child(5) {
-    animation-delay: 2.5s;
+    animation-delay: 1.25s;
   }
 
   &:nth-child(6) {
-    animation-delay: 3s;
+    animation-delay: 1.5s;
   }
 
   &:nth-child(7) {
-    animation-delay: 3.5s;
+    animation-delay: 1.75s;
   }
 }
 
@@ -616,6 +618,7 @@ details[open] summary {
 
 .details__liste li {
   margin-top: 0.5em;
+  max-width: 55ch;
 }
 
 .details__task {
@@ -821,9 +824,10 @@ summary::marker {
   font-size: 16px;
 }
 
-.openbutton:hover {
+button:hover {
   opacity: 0.5;
 }
+
 
 /*-----------------------Tableau----------------------*/
 
@@ -1050,6 +1054,7 @@ summary::marker {
   font-family: cursive;
   padding: 56px;
   margin: 142px 0 0 0;
+  height: 50vh;
 }
 
 .container_credits div {
@@ -1060,6 +1065,10 @@ summary::marker {
   border: solid tomato;
   border-width: thin medium thick 1em;
   margin-bottom: 20px;
+}
+
+.container__credits li{
+  max-width: 100ch;
 }
 
 
@@ -1176,10 +1185,6 @@ footer {
     width: 100%;
   }
 
-  .video--margin {
-    margin-top: 140px;
-  }
-
   .txtGras {
     margin-bottom: 22px;
   }
@@ -1194,39 +1199,17 @@ footer {
     font-size: 20px;
   }
 
+  .liste__ameliorer {
+    margin-left: 10px;
+  }
+
   /* ----------------------- SECTION----------------------- */
 
-  .sectionOne {
-
-    padding: 60px;
-
-  }
-
-
-  .sectionTwo {
-    padding: 60px;
-  }
-
-  .sectionThree {
-    padding: 60px;
-  }
-
-  .sectionFour {
-    padding: 60px;
-  }
-
-  .sectionFive {
+  .section--padding {
     padding: 60px;
   }
 
 
-  .sectionSix {
-    padding: 60px;
-  }
-
-  .sectionSeven {
-    padding: 60px;
-  }
 
   /* ----------------------- GRID ----------------------- */
 
@@ -1383,10 +1366,6 @@ footer {
   }
 
 
-  .main__section {
-    margin-bottom: 90px;
-  }
-
   .tabs {
     padding: 30px 15px 30px 15px;
   }
@@ -1417,8 +1396,6 @@ footer {
     margin-top: 26px;
     padding: 60px;
   }
-
-
 
 }
 
