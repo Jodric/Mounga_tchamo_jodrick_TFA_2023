@@ -11,15 +11,16 @@
     border-radius: 7px;
     padding: 10px;
     background-color: #06593B;
+
+    .audit__el {
+      background-color: white;
+      border-radius: 7px;
+      padding: 20px;
+    }
+    
   }
   
-  
-  .container__audit {
-    background-color: white;
-    border-radius: 7px;
-    padding: 20px;
-  }
-  
+
   .auditTwo {
    margin: 10px 0;
   }

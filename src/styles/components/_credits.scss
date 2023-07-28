@@ -3,13 +3,17 @@
   text-align: center;
   font-family: cursive;
   padding: 56px;
-  margin: 142px 0 0 0;
   height: 50vh;
+
+  div {
+    margin-top: 16px;
+  }
+
+  li{
+    max-width: 100ch;
+  }
 }
 
-.container_credits div {
-  margin-top: 16px;
-}
 
 .rem {
   border: solid tomato;
@@ -17,6 +21,3 @@
   margin-bottom: 20px;
 }
 
-.container__credits li{
-  max-width: 100ch;
-}
