@@ -1,0 +1,45 @@
+.logo__el {
+    width: 97px;
+}
+
+.logo__text {
+    white-space: nowrap;
+    text-indent: 100%;
+    position: absolute;
+    overflow: hidden;
+}
+
+.btn__documentation {
+    background-color: #06593B;
+    color: white;
+    cursor: pointer;
+    font-weight: bolder;
+    padding: 9px;
+    border-style: none;
+    border-radius: 10px;
+    margin-right: 10px;
+    font-size: 12px;
+}
+
+.head {
+    display: flex;
+    justify-content: space-around;
+    top: 0;
+    width: 100%;
+    position: sticky;
+    z-index: 1;
+    transition: 1s;
+    align-items: center;
+    background-color: white;
+    border-bottom: 3px solid white;
+
+}
+
+.menu__el--actif {
+    opacity: 0.6;
+}
+
+.head--hide {
+    opacity: .0001;
+    top: -110px;
+}

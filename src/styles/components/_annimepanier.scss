@@ -1,0 +1,210 @@
+/* ----------------------- SVG ----------------------- */
+
+.cls-1 {
+    fill: #c9c0b1;
+  }
+  
+  .cls-1,
+  .cls-2 {
+    opacity: .37;
+  }
+  
+  .cls-3 {
+    fill: #568e4c;
+  }
+  
+  .cls-4 {
+    fill: #823e05;
+  }
+  
+  .cls-5,
+  .cls-6,
+  .cls-7,
+  .cls-8 {
+    fill: #fff;
+  }
+  
+  .cls-9 {
+    fill: #5a75ab;
+  }
+  
+  .cls-10 {
+    fill: #d34f47;
+  }
+  
+  .cls-11 {
+    fill: #e1a42b;
+  }
+  
+  .cls-12 {
+    fill: #88b5d4;
+  }
+  
+  .cls-13 {
+    fill: #223465;
+  }
+  
+  .cls-6 {
+    opacity: .27;
+  }
+  
+  .cls-6,
+  .cls-7,
+  .cls-8 {
+    isolation: isolate;
+  }
+  
+  .cls-14 {
+    fill: #e5ca30;
+  }
+  
+  .cls-15 {
+    fill: #435ca7;
+  }
+  
+  .cls-16 {
+    fill: #9ed2f2;
+  }
+  
+  .cls-17 {
+    fill: #60453f;
+  }
+  
+  .cls-18 {
+    fill: #94756d;
+  }
+  
+  .cls-19 {
+    fill: #324496;
+  }
+  
+  .cls-20 {
+    opacity: .27;
+  }
+  
+  .cls-20,
+  .cls-21 {
+    fill: #06593b;
+  }
+  
+  .cls-22 {
+    fill: #72ba65;
+  }
+  
+  .cls-23 {
+    fill: #735b53;
+  }
+  
+  .cls-7 {
+    opacity: .37;
+  }
+  
+  .cls-24 {
+    fill: #473834;
+  }
+  
+  .cls-25 {
+    fill: #faea3f;
+  }
+  
+  .cls-26 {
+    fill: #ae3f3c;
+  }
+  
+  .cls-27 {
+    fill: #ed9254;
+  }
+  
+  .cls-28 {
+    fill: #d8874e;
+  }
+  
+  .cls-29 {
+    fill: #f6a03a;
+  }
+  
+  .cls-30 {
+    fill: #b87446;
+  }
+  
+  .cls-31 {
+    fill: #456c4a;
+  }
+  
+  .cls-32 {
+    fill: #fccc86;
+  }
+  
+  .cls-33 {
+    fill: #856962;
+  }
+  
+  .cls-8 {
+    opacity: .58;
+  }
+  
+  /* ----------------------- Annimation ----------------------- */
+  
+  @keyframes moveVivres {
+    0% {
+      transform: translate3d(-100%, -100%, 0);
+      opacity: 0;
+    }
+  
+    100% {
+      transform: translateZ(0);
+      transition: transform cubic-bezier(.215, .61, .355, 1) 0ms;
+      opacity: 1;
+    }
+  }
+  
+  .groupe-animation {
+    opacity: 0;
+    animation: moveVivres 3s forwards;
+  }
+  
+  .tea {
+    animation-delay: 2.5s;
+  }
+  
+  .banane {
+    animation-delay: 2s;
+  }
+  
+  .legume {
+    animation-delay: 1.5s;
+  }
+  
+  .pomme1 {
+    animation-delay: 0.5s;
+  }
+  
+  .pomme2 {
+    animation-delay: 1s;
+  }
+  
+  .bouteille {
+    animation-delay: 0.5s;
+  }
+  
+  .pain {
+    animation-delay: 3s;
+  }
+  
+  @keyframes moveSac {
+    0% {
+      transform: translateY(100%);
+      opacity: 0;
+    }
+  
+    100% {
+      transform: translateZ(0);
+      transition: transform cubic-bezier(.215, .61, .355, 1) 0ms;
+      opacity: 1;
+    }
+  }
+  
+  .sac-animation {
+    opacity: 0;
+    animation: moveSac 3s forwards;
+  }

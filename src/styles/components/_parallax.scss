@@ -1,0 +1,23 @@
+
+
+.parallax-section {
+
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+  
+  }
+  
+  .descrip__fonction--parallax {
+  
+    position: sticky;
+    top: 0;
+    height: 100%;
+    box-sizing: border-box;
+  }
+  
+  .analyse__result--parallax {
+    position: sticky;
+    top: -400px;
+    height: 100%;
+    box-sizing: border-box;
+  }

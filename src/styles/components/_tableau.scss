@@ -1,0 +1,73 @@
+
+.custom-table {
+    border-spacing: 10px;
+    color: white;
+    width: 100%;
+    overflow-x: auto;
+    border-collapse: collapse;
+    margin-top: 22px;
+  }
+  
+  .custom-table td {
+    border: 1px solid;
+    padding: 8px;
+    position: relative;
+  }
+  
+  .questions {
+    background-color: #06593B;
+  }
+  
+  .reponse__heaj {
+    background-color: #823E05;
+  }
+  
+  .reponse__henallux {
+    background-color: #823E05;
+  }
+  
+  .reponse__unamur {
+    background-color: #823E05;
+  }
+
+  /*-----------------------voir plus -------------------*/
+
+
+
+.voirPlus {
+    display: none;
+  }
+  
+  .voirPlus.show {
+    display: block;
+  }
+  
+  .voirPlus--tableau {
+    display: none;
+  }
+  
+  .voirPlus--tableau.show {
+    display: block;
+  }
+  
+  
+  .openbutton,
+  .openbutton__2 {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    background-color: #06593B;
+    color: white;
+    font-weight: bolder;
+    padding: 10px;
+    border-style: none;
+    border-radius: 25px;
+    font-size: 16px;
+  }
+  
+  button:hover {
+    opacity: 0.5;
+  }
+  
+  
+  

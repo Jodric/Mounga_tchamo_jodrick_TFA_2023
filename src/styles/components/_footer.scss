@@ -1,0 +1,51 @@
+/* ----------------------- FOOTER ----------------------- */
+
+
+footer {
+    text-align: center;
+    border-top: 1px solid #06593B;
+  }
+  
+  
+  .li__footer {
+  
+    display: flex;
+    flex-direction: column;
+    padding-top: 23px;
+    padding: 25px;
+    text-align: left;
+  
+  }
+  
+  .copyrith {
+  
+    padding-bottom: 20px;
+    display: inline-flex;
+  }
+  
+  .el__footer--actif {
+    margin-right: 20px;
+    text-decoration: underline;
+    color: darkblue;
+  }
+  
+  .el__footer {
+    margin-top: 5px;
+  }
+  
+  .annee {
+    color: black;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  
+  .footer a {
+    color: #823e05;
+  }
+  
+  .img__logoDwt {
+    margin-left: 5px;
+    background-color: black;
+    width: 45px;
+    height: 26px;
+  }
